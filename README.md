@@ -8,15 +8,16 @@
  3. 可以进行大图预览，预览时可进行放缩操作
  
 ### 效果图
-![](http://img.blog.csdn.net/20160513100204994)
+![](http://img.blog.csdn.net/20160513152752456)
 
-![](http://img.blog.csdn.net/20160513100217962)
+![](http://img.blog.csdn.net/20160513152807268)
 
-![](http://img.blog.csdn.net/20160513100230728)
+![](http://img.blog.csdn.net/20160513152824143)
 
-![](http://img.blog.csdn.net/20160513100239806)
+![](http://img.blog.csdn.net/20160513152844518)
 
-![](http://img.blog.csdn.net/20160513100247950)
+![](http://img.blog.csdn.net/20160513152854975)
+
 
 ### 感谢
 
