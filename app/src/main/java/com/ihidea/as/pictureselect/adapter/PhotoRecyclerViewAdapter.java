@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,9 +48,10 @@ public class PhotoRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.
 
     XCallbackListener mXCallbackListener;
 
-
-    public PhotoRecyclerViewAdapter(Context mContext, List<PhotoInfo> mPhotoInfoList, XCallbackListener mXCallbackListener) {
+    FragmentManager fragmentManager;
+    public PhotoRecyclerViewAdapter(Context mContext, FragmentManager fragmentManager, List<PhotoInfo> mPhotoInfoList, XCallbackListener mXCallbackListener) {
         this.mContext = mContext;
+        this.fragmentManager=fragmentManager;
         this.mPhotoInfoList = mPhotoInfoList;
         mInflater = LayoutInflater.from(mContext);
         this.mXCallbackListener = mXCallbackListener;
@@ -115,7 +117,7 @@ public class PhotoRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.
             ((FootViewHolder) holder).mImageAdd.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    ((MainActivity) mContext).openChoiceDialog();
+                    ((MainActivity) mContext).openChoiceDialog(mContext,fragmentManager);
                 }
             });
 //            }
