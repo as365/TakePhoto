@@ -10,7 +10,11 @@
 
 
 ### 效果演示
+
+
 ![这里写图片描述](http://img.blog.csdn.net/20161026151259070)
+
+http://upload-images.jianshu.io/upload_images/676457-2cf2314875fb6ef8.gif?imageMogr2/auto-orient/strip
 
 ### 主要亮点
 
