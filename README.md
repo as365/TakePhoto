@@ -10,7 +10,7 @@
 
 
 ### 效果演示
-![](http://upload-images.jianshu.io/upload_images/676457-1bc37a127eacdd96.gif?imageMogr2/auto-orient/strip)
+![这里写图片描述](http://img.blog.csdn.net/20161026151259070)
 
 ### 主要亮点
 
