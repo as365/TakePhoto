@@ -6,16 +6,10 @@
 
 
 
-### github地址
-[欢迎star、fork，点击跳转 https://github.com/crazyandcoder/TakePhoto](https://github.com/crazyandcoder/TakePhoto)
-
-
-### 效果演示
+### **效果演示**
 
 
 ![这里写图片描述](http://img.blog.csdn.net/20161026151259070)
-
-http://upload-images.jianshu.io/upload_images/676457-2cf2314875fb6ef8.gif?imageMogr2/auto-orient/strip
 
 ### 主要亮点
 
@@ -23,32 +17,26 @@ http://upload-images.jianshu.io/upload_images/676457-2cf2314875fb6ef8.gif?imageM
  2. 可以对已经选中的图片进行编辑、如裁剪、放大、缩小等操作
  3. 直接返回选中图片的地址，方便后续操作，如上传服务器等。
 
-### v1.0.2 版本（2016.10.26）
 
-
-![](http://img.blog.csdn.net/20161026140852254)
-
-[从fir获取demo演示apk](http://fir.im/fykm)
-
-### gradle引用
+### **gradle引用**
 
 ```
 compile 'liji.library.dev:takephotolib:1.1.0'
 ```
 
 
-### 代码示例（v1.1.0）
+### **代码示例（v1.1.0）**
 
 ```
 	  TakePhoto takePhoto = new TakePhoto(MainActivity.this);
-                takePhoto.setOnPictureSelected(new TakePhoto.onPictureSelected() {
+      takePhoto.setOnPictureSelected(new TakePhoto.onPictureSelected() {
                     @Override
-                    public void select(String path) {
-                        textView.setText("选择的图片地址：" + path);
-                        Glide.with(MainActivity.this).load("file://" + path).into(imageView);
+                    public void select(String path，String compresspath) {
+      //path图片原始地址
+      //compresspath  图片经过压缩后的地址          
                     }
                 });
-                takePhoto.show();
+      takePhoto.show();
 ```
 
  
@@ -58,16 +46,12 @@ compile 'liji.library.dev:takephotolib:1.1.0'
 ----------
 
 
-**关于作者**
+### **关于作者**
 
-QQ：        275137657 
-github：   https://github.com/crazyandcoder 
-个人博客：http://crazyandcoder.github.io/
+ 1. QQ：        275137657
+ 2. github：   https://github.com/crazyandcoder
+ 3. 个人博客：http://crazyandcoder.github.io/
 
-
-### 感谢
+### **感谢**
 
  - [galleryfinal](https://github.com/pengjianbo/GalleryFinal)
- - [ActionSheet](https://github.com/baoyongzhang/android-ActionSheet)
- - [glide](https://github.com/bumptech/glide) 
- - [universalimageloader](https://github.com/nostra13/Android-Universal-Image-Loader)
