@@ -33,11 +33,11 @@ http://upload-images.jianshu.io/upload_images/676457-2cf2314875fb6ef8.gif?imageM
 ### gradle引用
 
 ```
-compile 'liji.library.dev:takephotolib:1.0.2'
+compile 'liji.library.dev:takephotolib:1.1.0'
 ```
 
 
-### 代码示例（v1.0.2）
+### 代码示例（v1.1.0）
 
 ```
 	  TakePhoto takePhoto = new TakePhoto(MainActivity.this);
