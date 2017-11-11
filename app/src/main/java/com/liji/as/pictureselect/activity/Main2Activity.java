@@ -20,7 +20,7 @@ import java.util.List;
 
 public class Main2Activity extends AppCompatActivity implements IMakePic {
     
-    RecyclerView rv_addphoto;
+    RecyclerView mRecyclerView;
     
     MakePicAdapter mMakePicAdapter;
     
@@ -41,8 +41,8 @@ public class Main2Activity extends AppCompatActivity implements IMakePic {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        
-        rv_addphoto = (RecyclerView) findViewById(R.id.rv_addphoto);
+
+        mRecyclerView = (RecyclerView) findViewById(R.id.rv_addphoto);
         
         //预加载网络图片
         for (int i = 0; i < urls.length; i++) {
@@ -53,10 +53,11 @@ public class Main2Activity extends AppCompatActivity implements IMakePic {
         
         //图片列表
         GridLayoutManager mLayoutManager = new GridLayoutManager(this, 3);
-        rv_addphoto.setLayoutManager(mLayoutManager);
-        
+        mRecyclerView.setLayoutManager(mLayoutManager);
+
+
         mMakePicAdapter = new MakePicAdapter(this, photoInfos, this, Constatnt.EDIT);
-        rv_addphoto.setAdapter(mMakePicAdapter);
+        mRecyclerView.setAdapter(mMakePicAdapter);
         
     }
     

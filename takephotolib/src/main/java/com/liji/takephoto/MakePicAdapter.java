@@ -281,12 +281,6 @@ public class MakePicAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         }
     }
     
-    /**
-     * @2Do: 添加Holder
-     * @Author M2
-     * @Version v 1.0
-     * @Date 2016/5/16 0016
-     */
     public static class AddViewHolder extends RecyclerView.ViewHolder {
         
         ImageView mImageAdd;
@@ -298,12 +292,6 @@ public class MakePicAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         
     }
     
-    /**
-     * @2Do:内容viewHolder
-     * @Author M2
-     * @Version v 1.0
-     * @Date 2016/5/16 0016
-     */
     public static class ContentViewHolder extends RecyclerView.ViewHolder {
         
         ImageView mIvPhoto;
