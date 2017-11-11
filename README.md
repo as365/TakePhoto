@@ -142,6 +142,8 @@ compile 'liji.library.dev:takephotolib:2.0.0'
  1. 简书 http://www.jianshu.com/users/18281bdb07ce/latest_articles
  2. 博客 http://crazyandcoder.github.io/
  3. github https://github.com/crazyandcoder
+ 4. 掘金 https://juejin.im/user/56b96af96240b8005865df59
+ 
 
 ### **感谢**
 
