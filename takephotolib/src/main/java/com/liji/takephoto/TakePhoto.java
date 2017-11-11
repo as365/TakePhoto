@@ -28,7 +28,7 @@ import top.zibin.luban.OnCompressListener;
  * 作者：liji on 2016/7/11 15:59
  * 邮箱：lijiwork@sina.com
  */
-public class TakePhoto implements CanShow {
+public class TakePhoto implements ICanShow {
     
     private Context context;
     
@@ -76,15 +76,14 @@ public class TakePhoto implements CanShow {
         popwindow.setTouchable(true);
         popwindow.setOutsideTouchable(true);
         popwindow.setFocusable(true);
-
+        
         popwindow.setOnDismissListener(new PopupWindow.OnDismissListener() {
             @Override
             public void onDismiss() {
                 setBackgroundAlpha(context, 1.0f);
             }
         });
-
-
+        
         ThemeConfig theme = ThemeConfig.DEFAULT;
         
         //配置功能
@@ -114,7 +113,9 @@ public class TakePhoto implements CanShow {
         btnBendi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                
                 GalleryFinal.openGallerySingle(REQUEST_CODE_GALLERY, functionConfig, mOnHanlderResultCallback);
+                hide();
             }
         });
         
@@ -123,9 +124,10 @@ public class TakePhoto implements CanShow {
             @Override
             public void onClick(View v) {
                 GalleryFinal.openCamera(REQUEST_CODE_CAMERA, functionConfig, mOnHanlderResultCallback);
+                hide();
             }
         });
-
+        
     }
     
     private GalleryFinal.OnHanlderResultCallback mOnHanlderResultCallback = new GalleryFinal.OnHanlderResultCallback() {
@@ -186,7 +188,7 @@ public class TakePhoto implements CanShow {
     @Override
     public void hide() {
         if (isShow()) {
-
+            
             popwindow.dismiss();
         }
     }
