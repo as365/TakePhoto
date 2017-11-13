@@ -50,7 +50,7 @@
 ### **gradle引用**
 
 ```
-compile 'liji.library.dev:takephotolib:2.0.0'
+compile 'liji.library.dev:takephotolib:2.0.1'
 ```
 
 
