@@ -8,8 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.liji.imagezoom.util.ImageZoom;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,6 +51,12 @@ public class MakePicAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     
     public void setMaxCount(int maxCount) {
         this.maxCount = maxCount;
+    }
+    
+    private OnItemClickListener mOnItemClickListener;
+    
+    public void setmOnItemClickListener(OnItemClickListener mOnItemClickListener) {
+        this.mOnItemClickListener = mOnItemClickListener;
     }
     
     public MakePicAdapter(Context context, List<PhotoInfo> photoInfoList, IMakePic makePic) {
@@ -181,11 +185,13 @@ public class MakePicAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 ((ContentViewHolder) holder).mIvDelete.setVisibility(View.GONE);
                 
                 //查看预览图
-                final String finalPath = path;
                 ((ContentViewHolder) holder).mIvPhoto.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        ImageZoom.show(mContext, finalPath, ImageZoom.LOCAL);
+                        
+                        if (null != mOnItemClickListener) {
+                            mOnItemClickListener.onItemClick(v, position);
+                        }
                     }
                     
                 });
@@ -236,12 +242,16 @@ public class MakePicAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 });
                 
                 //查看预览图
+                //查看预览图
                 ((ContentViewHolder) holder).mIvPhoto.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        ImageZoom.show(mContext, finalPath, ImageZoom.LOCAL);
+
+                        if (null != mOnItemClickListener) {
+                            mOnItemClickListener.onItemClick(v, position);
+                        }
                     }
-                    
+
                 });
             }
             else if (holder instanceof AddViewHolder) {

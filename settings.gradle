@@ -1,1 +1,1 @@
-include ':app', ':takephotolib'
+include ':app', ':takephotolib', ':lib_galleryfinal'
