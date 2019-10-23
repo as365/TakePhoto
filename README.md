@@ -1,3 +1,6 @@
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191023090914820.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xqMTg4MjY2,size_16,color_FFFFFF,t_70)
+
 ## **TakePhotoV2.0.0**
 
 [![](https://badge.juejin.im/entry/5a06740d51882512a860c893/likes.svg?style=flat-square)](https://juejin.im/post/5a06739ff265da432b4a4bb5)
